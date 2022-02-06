@@ -1,5 +1,5 @@
 const { createLogger, format, transports } = require('winston');
-const { combine, timestamp, label, printf, json } = format;
+const { combine, timestamp, label, printf, json, colorize, errors } = format;
 
 const prodLogger = () => {
 
@@ -7,6 +7,8 @@ return createLogger({
     level: 'error',
     format: combine(
         timestamp(),
+        colorize(),
+        errors({stack: true}),
         json()
       ),
     //defaultMeta: { service: 'user-service' },

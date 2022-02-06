@@ -4,7 +4,7 @@
   "description": "POC to test Winston logger",
   "main": "app.js",
   "scripts": {
-    "start": " NODE_ENV=dev node app.js"
+    "start": " NODE_ENV=production node app.js"
   },
   "author": "Vishal",
   "license": "ISC",
