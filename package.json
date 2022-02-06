@@ -1,0 +1,19 @@
+{
+  "name": "poc-winston-logger",
+  "version": "1.0.0",
+  "description": "POC to test Winston logger",
+  "main": "app.js",
+  "scripts": {
+    "start": " NODE_ENV=dev node app.js"
+  },
+  "author": "Vishal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "winston": "^3.5.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
